@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-void text-white;
+  }
+}
+
+@layer utilities {
+  .glow-brand {
+    text-shadow: 0 0 10px rgba(44, 255, 5, 0.5);
+  }
+  
+  .glow-error {
+    text-shadow: 0 0 10px rgba(255, 0, 60, 0.5);
+  }
+}
